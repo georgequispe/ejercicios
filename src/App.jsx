@@ -1,7 +1,8 @@
 import { useState } from 'react'
 
 import React from 'react';
-import workoutsData from '../routines';
+
+import workoutsData from './data/routines';
 import GlobalStyle from './GlobalStyle';
 
 
