@@ -23,5 +23,23 @@ export const Img = styled.img`
     `border: 4px solid red; z-index: 1;`
     :`border: 5px solid transparent;`}
 `;
+export const StartButton = styled.button`
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 8px 12px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: #ff4b4b;
+  }
+`;
+
+
     
   
