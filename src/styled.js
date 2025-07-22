@@ -6,9 +6,12 @@ export const Row = styled.div`
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  img{
+  img{        
+   
     width: 100%;
     height: auto;
+    
+
   }
 `;
 export const Grid2 = styled.div`
@@ -26,7 +29,8 @@ export const Img = styled.img`
 export const StartButton = styled.button`
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 8px 12px;
   background-color: #ff6b6b;
   color: white;
@@ -39,6 +43,8 @@ export const StartButton = styled.button`
     background-color: #ff4b4b;
   }
 `;
+
+
 
 
     
