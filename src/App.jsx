@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Row } from './styled';
+import { Row , Img} from './styled';
 import workoutsData from './data/routines';
 
 function App() {
@@ -17,7 +17,10 @@ function App() {
         <Row>
         {workout.routine.map((exercise, index) => (
           <li key={index}>
-            <img src={exercise.img} alt={exercise.exercise} onClick={() => setCurrentEx(index)} />
+            <Img src={exercise.img}
+             alt={exercise.exercise}
+             onClick={() => setCurrentEx(index)}
+             active={index === currentEx} />
             <p>{exercise.exercise}: {exercise.reps} reps</p>
          </li>
        ))}
