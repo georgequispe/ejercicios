@@ -38,6 +38,9 @@ useEffect(() => {
         <ImgContainer>
           <img src={workout.routine[currentEx].img} 
             alt={workout.routine[currentEx].exercise} /> 
+          <div>Countdown: {counter} s</div> 
+          <div>Exercise: {workout.routine[currentEx].exercise}</div>
+          <div>Reps: {workout.routine[currentEx].reps}</div>
          <StartButton onClick={() => setClockWorking(!clockWorking)}>Start</StartButton>
         </ImgContainer>     
         <Row>
@@ -49,12 +52,8 @@ useEffect(() => {
                alt={exercise.exercise}
                onClick={() => setCurrentEx(index)}
                 active={currentEx === index}
-              />
-                           
-              <div>Countdown: {counter} s</div>
-              <div>
-                <p>{exercise.exercise}: {exercise.reps} reps</p>
-              </div>
+              />                        
+                          
             </div>
           ))}
        
