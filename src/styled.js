@@ -6,12 +6,11 @@ export const Row = styled.div`
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  img{        
+  img{       
    
     width: 100%;
     height: auto;
     
-
   }
 `;
 export const Grid2 = styled.div`
@@ -43,7 +42,10 @@ export const StartButton = styled.button`
     background-color: #ff4b4b;
   }
 `;
-
+export const ImgContainer = styled.div`
+  position: relative;
+  width: 100%;
+`;
 
 
 

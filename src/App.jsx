@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react'
 import { Row , Img} from './styled';
 import workoutsData from './data/routines';
-import { StartButton } from './styled';
+import { StartButton, ImgContainer } from './styled';
 
 const timerTime = 30;
 
 function App() {
 const [counter, setCounter] = useState(10);
 const [clockWorking, setClockWorking] = useState(false);
+const [currentWorkout, setCurrentWorkout] = useState(0)
+const workout = workoutsData[currentWorkout]
+const [currentEx, setCurrentEx] = useState(0)
 useEffect(() => {
   if (clockWorking) {
     if (counter > 0) {
@@ -25,36 +28,41 @@ useEffect(() => {
   }
 }, [clockWorking, counter]);
 
-  const [currentWorkout, setCurrentWorkout] = useState(0)
-  const workout = workoutsData[currentWorkout]
-  const [currentEx, setCurrentEx] = useState(0)
+  
 
   return (
     <> 
      
      <h1>{workout.title}</h1>
       <Row>
-        <img src={workout.routine[currentEx].img} 
-        alt={workout.routine[currentEx].exercise} />
-        
+        <ImgContainer>
+          <img src={workout.routine[currentEx].img} 
+            alt={workout.routine[currentEx].exercise} /> 
+         <StartButton onClick={() => setClockWorking(!clockWorking)}>Start</StartButton>
+        </ImgContainer>     
         <Row>
-        <ul>
+        
           {workout.routine.map((exercise, index) => (
-            <div key={index} style={{ position: 'relative'}}
->
+            <div key={index} style={{ position: 'relative'}}>
+               
               <Img src={exercise.img}
                alt={exercise.exercise}
                onClick={() => setCurrentEx(index)}
                 active={currentEx === index}
               />
-              <p>{exercise.exercise}: {exercise.reps} reps</p>
-              <StartButton onClick={() => setClockWorking(!clockWorking)}>Start</StartButton>
+                           
               <div>Countdown: {counter} s</div>
+              <div>
+                <p>{exercise.exercise}: {exercise.reps} reps</p>
+              </div>
             </div>
           ))}
-        </ul>
+       
         </Row>
       </Row>
+      <div>
+       
+      </div>
     </>
   )
 
