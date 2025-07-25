@@ -1,5 +1,5 @@
-import styled from "styled-components";
-
+import styled, { css } from "styled-components";
+import flecha from './assets/flecha.png';
 export const Row = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
@@ -46,8 +46,21 @@ export const ImgContainer = styled.div`
   position: relative;
   width: 100%;
 `;
+const Btn = css`
+  display: inline-block;
+  cursor: pointer;
+  background-image: url(${flecha});
+  background-size:100% 100%;
+  width: 30px;
+  height: 30px;
+`; 
+export const BtnLeft = styled.span`
+  ${Btn}
+  margin-right: 10px;
+`;
+export const BtnRight = styled.span`
+  ${Btn}
+  transform: rotate(180deg);
+  margin-left: 10px;
+`;
 
-
-
-    
-  
