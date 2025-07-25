@@ -36,7 +36,7 @@ useEffect(() => {
       <Row>
         <img src={workout.routine[currentEx].img} 
         alt={workout.routine[currentEx].exercise} />
-        <StartButton onClick={() => setClockWorking(!clockWorking)}>Start</StartButton>
+        
         <Row>
         <ul>
           {workout.routine.map((exercise, index) => (
@@ -48,7 +48,7 @@ useEffect(() => {
                 active={currentEx === index}
               />
               <p>{exercise.exercise}: {exercise.reps} reps</p>
-              
+              <StartButton onClick={() => setClockWorking(!clockWorking)}>Start</StartButton>
               <div>Countdown: {counter} s</div>
             </div>
           ))}
