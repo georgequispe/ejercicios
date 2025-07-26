@@ -64,3 +64,22 @@ export const BtnRight = styled.span`
   margin-left: 10px;
 `;
 
+
+const SmallCard = styled.div`
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: ${({ active }) =>
+    active ? '0 0 10px rgba(0, 123, 255, 0.5)' : '0 2px 5px rgba(0,0,0,0.1)'};
+  border: ${({ active }) => (active ? '2px solid #007bff' : 'none')};
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+`;
+
+  
+
+const Thumbnail = styled.img`
+  width: 100%;
+  height: auto;
+  display: block;
+`;
