@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react'
 import { Row , Img, BtnLeft, BtnRight} from './styled';
 import workoutsData from './data/routines';
 import { StartButton, ImgContainer } from './styled';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const timerTime = 30;
 
 function App() {
-const [counter, setCounter] = useState(10);
+const [counter, setCounter] = useState(timerTime);
 const [clockWorking, setClockWorking] = useState(false);
 const [currentWorkout, setCurrentWorkout] = useState(0)
 const workout = workoutsData[currentWorkout]
