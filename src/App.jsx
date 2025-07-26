@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Row , Img} from './styled';
+import { Row , Img, BtnLeft, BtnRight} from './styled';
 import workoutsData from './data/routines';
 import { StartButton, ImgContainer } from './styled';
 
@@ -27,13 +27,30 @@ useEffect(() => {
     setCurrentEx(0);
   }
 }, [clockWorking, counter]);
-
+const nextWorkout = () => {
+  if (currentWorkout < workoutsData.length - 1) {
+    setCurrentWorkout(currentWorkout + 1);
+  } else {
+    setCurrentWorkout(0);
+  }
+}
+const prevWorkout = () => {
+  if (currentWorkout > 0) {
+    setCurrentWorkout(currentWorkout - 1);
+  } else {
+    setCurrentWorkout(workoutsData.length - 1);
+  }
+}
   
 
   return (
     <> 
      
-     <h1>{workout.title}</h1>
+     <h1>
+      <BtnLeft onClick={prevWorkout}></BtnLeft>
+      {workout.title}
+      <BtnRight onClick={nextWorkout}></BtnRight>
+      </h1>
       <Row>
         <ImgContainer>
           <img src={workout.routine[currentEx].img} 

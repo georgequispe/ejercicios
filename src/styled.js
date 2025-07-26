@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import flecha from './assets/flecha.png';
+import flecha from './assets/images/flecha.png';
 export const Row = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
