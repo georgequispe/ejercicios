@@ -70,13 +70,13 @@ function App() {
         <Col xs={12} md={6}>
           <Row>
             {workout.routine.map((exercise, index) => (
-              <Col xs={4} key={index} className="mb-3 text-center">
-                <Img
-                  src={exercise.img}
-                  alt={exercise.exercise}
+              <Col key={index} xs={6} md={4} lg={3}>
+                <SmallCard
                   onClick={() => setCurrentEx(index)}
                   active={currentEx === index}
-                />
+                >
+                  <Thumbnail src={exercise.img} alt={exercise.exercise} />
+                </SmallCard>
               </Col>
             ))}
           </Row>
