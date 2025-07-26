@@ -4,6 +4,8 @@ import workoutsData from './data/routines';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { SmallCard, Thumbnail } from './styled';
+import { Helmet } from "react-helmet";
+
 
 const timerTime = 30;
 
@@ -13,6 +15,7 @@ function App() {
   const [currentWorkout, setCurrentWorkout] = useState(0);
   const workout = workoutsData[currentWorkout];
   const [currentEx, setCurrentEx] = useState(0);
+ 
 
   useEffect(() => {
     if (clockWorking) {
@@ -44,6 +47,12 @@ function App() {
   };
 
   return (
+    <div>
+     <Helmet>
+        <title>Ejercicios Georgeo</title>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </Helmet>
+    
     <Container className="mt-4">
       <h1 className="text-center mb-4">
         <BtnLeft onClick={prevWorkout} />
@@ -84,6 +93,7 @@ function App() {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 }
 
