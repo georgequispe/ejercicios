@@ -65,7 +65,7 @@ export const BtnRight = styled.span`
 `;
 
 
-const SmallCard = styled.div`
+export const SmallCard = styled.div`
   cursor: pointer;
   border-radius: 10px;
   overflow: hidden;
@@ -78,7 +78,7 @@ const SmallCard = styled.div`
 
   
 
-const Thumbnail = styled.img`
+export const Thumbnail = styled.img`
   width: 100%;
   height: auto;
   display: block;

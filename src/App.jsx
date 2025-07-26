@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { Img, BtnLeft, BtnRight, StartButton, ImgContainer } from './styled';
 import workoutsData from './data/routines';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import { SmallCard, Thumbnail } from './styled';
 
 const timerTime = 30;
 
