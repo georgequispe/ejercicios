@@ -13,18 +13,8 @@ export const Row = styled.div`
     
   }
 `;
-export const Grid2 = styled.div`
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 20px;
-`;
-export const Img = styled.img`
-  width: 100%;
-  border-radius: 50px;
-  ${({ active}) => active ?
-    `border: 4px solid red; z-index: 1;`
-    :`border: 5px solid transparent;`}
-`;
+
+
 export const StartButton = styled.button`
   position: absolute;
   bottom: 10px;
