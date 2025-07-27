@@ -59,7 +59,6 @@ export const BtnRight = styled.span`
   margin-left: 10px;
 `;
 
-
 export const SmallCard = styled.div`
   cursor: pointer;
   border-radius: 10px;
@@ -69,12 +68,31 @@ export const SmallCard = styled.div`
   border: ${({ active }) => (active ? '2px solid #007bff' : 'none')};
   transition: all 0.3s ease;
   margin-bottom: 1rem;
-`;
-
-  
+`; 
 
 export const Thumbnail = styled.img`
   width: 100%;
   height: auto;
   display: block;
 `;
+export const LayoutWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
+export const MainContent = styled.main`
+  flex: 1;
+  padding: 2rem 1rem;
+  background-color: #fefefe;
+`;
+export const HeaderBar = styled.header`
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+`;
+
+
+
+

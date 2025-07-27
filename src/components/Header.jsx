@@ -1,8 +1,9 @@
+import { HeaderBar } from "../styled";
 function Header() {
   return (
-    <header>
+    <HeaderBar>
       <h1>¡Bienvenido a tu Workout!</h1>
-    </header>
+    </HeaderBar>
   );
 }
 export default Header;

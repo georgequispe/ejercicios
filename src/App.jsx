@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { SmallCard, Thumbnail } from './styled';
 import { Helmet } from "react-helmet";
-
+import Layout from './components/Layout';
 
 const timerTime = 30;
 
@@ -47,7 +47,7 @@ function App() {
   };
 
   return (
-    <div>
+    <Layout>
      <Helmet>
         <title>Ejercicios Georgeo</title>
         <link rel="icon" type="image/png" href="/favicon.png" />
@@ -93,7 +93,7 @@ function App() {
         </Col>
       </Row>
     </Container>
-    </div>
+    </Layout>
   );
 }
 
