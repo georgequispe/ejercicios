@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { SmallCard, Thumbnail } from '../styled';
 import { Helmet } from "react-helmet";
-import Layout from '../components/Layout';
+
 
 const timerTime = 30;
 function Workout() {
