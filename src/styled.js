@@ -13,29 +13,34 @@ export const Row = styled.div`
     
   }
 `;
-
-
 export const StartButton = styled.button`
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 8px 12px;
+  padding: 0.8rem 1.4rem;
   background-color: #ff6b6b;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1.1rem;
   cursor: pointer;
-  font-size: 1rem;
+  transition: background-color 0.3s;
 
   &:hover {
     background-color: #ff4b4b;
   }
 `;
+
+
 export const ImgContainer = styled.div`
-  position: relative;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 `;
+
 const Btn = css`
   display: inline-block;
   cursor: pointer;
