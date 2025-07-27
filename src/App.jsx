@@ -1,20 +1,22 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Welcome from "./components/Welcome";
+
 import Workout from "./pages/Workout";
+import Layout from "./components/Layout";
 
 
 
 
 function App() {
   return (
-    <BrowserRouter>
-      
+    <>
+     
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route path="/" element={<Layout />} />
           <Route path="/workout" element={<Workout />} />
         </Routes>
-      
-    </BrowserRouter>
+      </BrowserRouter>
+    </>
   );
 }
 

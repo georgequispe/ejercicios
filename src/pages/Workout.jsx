@@ -47,7 +47,7 @@ function Workout() {
   };
 
   return (
-    <Layout>
+   <div>
      <Helmet>
         <title>Ejercicios Georgeo</title>
         <link rel="icon" type="image/png" href="/favicon.png" />
@@ -93,7 +93,7 @@ function Workout() {
         </Col>
       </Row>
     </Container>
-    </Layout>
+   </div>
   );
 }
 
