@@ -1,8 +1,9 @@
+import { FooterBar } from "../styled"; 
 function Footer() {
   return (
-    <footer>
+    <FooterBar>
       <p>&copy; George 2025. Todos los derechos reservados.</p>
-    </footer>
+    </FooterBar>
   );
 }
 export default Footer;

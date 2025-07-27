@@ -92,6 +92,13 @@ export const HeaderBar = styled.header`
   padding: 1rem;
   text-align: center;
 `;
+export const FooterBar = styled.footer`
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+`;
+
 
 
 
