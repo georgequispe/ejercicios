@@ -1,4 +1,4 @@
-import { WelcomeWrapper } from "../styled";
+import { WelcomeWrapper, StartButton2 } from "../styled";
 function WelcomeView({ onStart }) {
 
   return (
@@ -6,7 +6,7 @@ function WelcomeView({ onStart }) {
       <WelcomeWrapper>
         <h2>¿Listo para empezar?</h2>
 
-        <button onClick={onStart}>Start Workout</button>
+        <StartButton2 onClick={onStart}>Start Workout</StartButton2>
       </WelcomeWrapper>
     </div>
   );

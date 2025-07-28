@@ -28,7 +28,20 @@ export const StartButton = styled.button`
     background-color: #ff4b4b;
   }
 `;
+export const StartButton2 = styled.button`
+  padding: 0.8rem 1.4rem;
+  background-color: #6bff97ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 
+  &:hover {
+    background-color: #055211ff;
+  }
+`;
 
 export const ImgContainer = styled.div`
   display: flex;
