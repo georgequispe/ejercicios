@@ -2,7 +2,6 @@ import { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import WelcomeView from "./WelcomeView";
-import Workout from "../pages/Workout";
 import { LayoutWrapper, MainContent } from "../styled";
 
 const Layout = ({  }) => {
