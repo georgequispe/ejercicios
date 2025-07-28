@@ -107,10 +107,27 @@ export const HeaderBar = styled.header`
   text-align: center;
 `;
 export const FooterBar = styled.footer`
-  background-color: #eee;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  background-color: #222;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+`;
+export const SocialIcons = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+
+export const IconLink = styled.a`
+  color: #fff;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: ${(props) => props.hoverColor || "#aaa"};
+  }
 `;
 export const WelcomeWrapper = styled.div`
   background-image: url(${foto_gym});
