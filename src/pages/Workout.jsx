@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { SmallCard, Thumbnail } from '../styled';
 import { Helmet } from "react-helmet";
-
+import { Link } from 'react-router-dom';
+import { ExitButton } from '../styled';
 
 const timerTime = 30;
 function Workout() {
@@ -74,6 +75,11 @@ function Workout() {
             <StartButton onClick={() => setClockWorking(!clockWorking)}>
               Start
             </StartButton>
+            <Link to="/">
+              <ExitButton>Salir</ExitButton>
+            </Link>
+
+
           </ImgContainer>
         </Col>
 

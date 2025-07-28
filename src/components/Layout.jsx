@@ -13,15 +13,11 @@ const Layout = ({  }) => {
     setCurrentScreen("workout");
   };
 
-
-
-
   return (
     <LayoutWrapper>
       <Header />
       <MainContent>
-        {currentScreen === "welcome" && <WelcomeView onStart={handleStart} />}
-        {currentScreen === "workout" && <Workout />}
+         <WelcomeView />
       </MainContent>
       <Footer />
     </LayoutWrapper>

@@ -139,6 +139,21 @@ export const WelcomeWrapper = styled.div`
   justify-content: center;
   align-items: center;
 `;
+export const ExitButton = styled.button`
+  background-color: #f44336;
+  color: white;
+  border: none;
+  margin-top: 12px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #d32f2f;
+  }
+`;
 
 
 
