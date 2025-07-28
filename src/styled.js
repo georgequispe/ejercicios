@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import flecha from './assets/images/flecha.png';
+import foto_gym from './assets/images/foto_gym.jpg';
 export const Row = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
@@ -98,6 +99,18 @@ export const FooterBar = styled.footer`
   padding: 1rem;
   font-size: 0.9rem;
 `;
+export const WelcomeWrapper = styled.div`
+  background-image: url(${foto_gym});
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+
 
 
 
