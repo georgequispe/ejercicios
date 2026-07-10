@@ -1,14 +1,14 @@
 # 🛒 Proyecto1 - React + Vite
 
-Este proyecto es una aplicación web desarrollada con React y Vite, que implementa un flujo de compra modular, persistente y visualmente claro. Está diseñado para escalar y mantener coherencia semántica en todo el stack.
+Este proyecto es una aplicacion web desarrollada con React y Vite, que implementa un flujo de compra modular, persistente y visualmente claro. Esta disenado para escalar y mantener coherencia semantica en todo el stack.
 
 ## 🚀 Tecnologías utilizadas
 
-- **React** con Vite para desarrollo rápido y HMR
-- **JavaScript modular** con lógica centralizada
-- **LocalStorage** para persistencia de datos entre páginas
+- **React** con Vite para desarrollo rapido y HMR
+- **JavaScript modular** con logica centralizada
+- **LocalStorage** para persistencia de datos entre paginas
 - **Bootstrap** para estilos responsivos
-- **Git + GitHub + Netlify** para control de versiones y despliegue automático
+- **Git + GitHub + Netlify** para control de versiones y despliegue automatico
 
 ## 🛒 Funcionalidades clave
 
