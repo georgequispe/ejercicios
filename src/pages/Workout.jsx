@@ -50,7 +50,7 @@ function Workout() {
   return (
    <div>
      <Helmet>
-        <title>Ejercicios Georgeo</title>
+        <title>Ejercicios George</title>
         <link rel="icon" type="image/png" href="/favicon.png" />
       </Helmet>
     
